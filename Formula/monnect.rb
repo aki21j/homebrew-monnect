@@ -1,4 +1,6 @@
 class Monnect < Formula
+  include Language::Python::Virtualenv
+
   desc "Automatically connect or disconnect a Bluetooth speaker when a specific display is connected on macOS"
   homepage "https://github.com/aki21j/Monnect"
   url "https://files.pythonhosted.org/packages/source/m/monnect/monnect-1.0.0.tar.gz"
@@ -8,10 +10,7 @@ class Monnect < Formula
   depends_on "python@3.12"
 
   def install
-    system Formula["python@3.12"].opt_bin/"pip3",
-           "install",
-           *std_pip_args,
-           buildpath
+    virtualenv_install_with_resources
   end
 
   test do
