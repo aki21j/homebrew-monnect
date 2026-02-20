@@ -8,7 +8,10 @@ class Monnect < Formula
   depends_on "python@3.12"
 
   def install
-    system Formula["python@3.12"].opt_bin/"pip3", "install", *std_pip_args
+    system Formula["python@3.12"].opt_bin/"pip3",
+           "install",
+           *std_pip_args,
+           buildpath
   end
 
   test do
