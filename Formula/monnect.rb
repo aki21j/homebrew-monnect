@@ -3,8 +3,8 @@ class Monnect < Formula
 
   desc "Automatically connect or disconnect a Bluetooth speaker when a specific display is connected on macOS"
   homepage "https://github.com/aki21j/Monnect"
-  url "https://files.pythonhosted.org/packages/source/m/monnect/monnect-1.0.0.tar.gz"
-  sha256 "eadddeedf82e7d59f7ac91000bfe69dc296ae54780fcad3dde868fd498710a45"
+  url "https://files.pythonhosted.org/packages/source/m/monnect/monnect-1.0.1.tar.gz"
+  sha256 "dccda49d0250907e58cd4b5df0ebf9a6716d3899e350e00de651136a2f206c29"
   license "MIT"
 
   depends_on "python@3.12"
